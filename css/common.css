@@ -1,0 +1,119 @@
+:root {
+  --main-navy: #041e3a;
+  --main-blue: #345e8c;
+  --main-pink: #ed51a4;
+  --color-bg: #efefef;
+  --sub-pink: #e8aad1;
+  --sub-blue: #5886ba;
+  --sub-skyblue: #a0cae0;
+  --border1: #555555;
+  --border2: #a9a9a9;
+  --border3: #dadada;
+  --text-black: #212121;
+  --text-gray: #555555;
+  --text-beige: #efe8e0;
+  --text-white: #ffffff;
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+  --border-radius: 8px;
+}
+
+/* 폰트사이즈 */
+.font28b {
+  font-size: 28px;
+  font-weight: var(--fw-bold);
+}
+
+.font28 {
+  font-size: 28px;
+}
+
+.font20b {
+  font-size: 20px;
+  font-weight: var(--fw-bold);
+}
+
+.font20 {
+  font-size: 20px;
+}
+
+.font18b {
+  font-size: 18px;
+  font-weight: var(--fw-bold);
+}
+
+.font18 {
+  font-size: 18px;
+}
+
+.font16b {
+  font-size: 16px;
+  font-weight: var(--fw-bold);
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.font14b {
+  font-size: 14px;
+  font-weight: var(--fw-bold);
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.font12b {
+  font-size: 12px;
+  font-weight: var(--fw-bold);
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.hidden {
+  display: hidden !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* li 장식 제거 */
+li {
+  list-style: none;
+}
+
+/* a 밑줄 제거, 글자색 */
+a {
+  text-decoration: none;
+  /* color: #222; */
+  color: inherit;
+  /*  부모의 color 속성을 상속받아서 사용한다 */
+}
+
+/* img,video 위 아래 정렬 */
+img,
+video {
+  vertical-align: middle;
+}
+
+/* em, i, address 기울기 제거 */
+em,
+i,
+address {
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Subway font';
+  font-weight: 800;
+  /* src:url(../font/Subway-Footlong.woff) */
+  src: url(../font/Subway-Footlong.woff);
+}
