@@ -6,6 +6,8 @@ body {
   width: 1920px;
 }
 
+/* header */
+
 .banner-wrap {
   display: flex;
   background: var(--main-navy);
@@ -77,6 +79,10 @@ body {
   font-weight: 600;
 }
 
+.inner .main-menu-list a:hover {
+  color: var(--main-pink);
+}
+
 .inner .list-bar::after {
   content: '|';
   margin: 0 0 0 10px;
@@ -84,11 +90,13 @@ body {
   font-weight: 400;
 }
 
+/* header-sub 스크롤 내릴 때 고정... */
 .inner .header-sub-wrap {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
 }
+
 .inner .sub-menu-left {
   display: flex;
   align-items: center;
@@ -109,9 +117,16 @@ body {
   color: var(--border2);
 }
 
+/* main */
+.sample {
+  height: 1000px;
+}
+
+/* footer */
+
 .footer-top .inner {
   display: flex;
-  padding: 17px 240px;
+  padding: 0 240px;
   gap: 500px;
 }
 .footer-top .footer-left {
@@ -149,10 +164,15 @@ body {
   font-size: 16px;
   color: var(--text-gray);
 }
+
 .footer-top .noti-list {
   margin: 0 0 5px 0;
   font-size: 12px;
   color: var(--text-gray);
+}
+
+.footer-top .footer-right .noti-list a:hover {
+  text-decoration: underline;
 }
 
 .footer-top .footer-right .cus-info-title {
@@ -183,6 +203,10 @@ body {
 .footer-bottom ul {
   display: flex;
   gap: 25px;
+}
+
+.footer-bottom ul > li > a:hover {
+  text-decoration: underline;
 }
 
 .footer-bottom .footer-bottom-list::after {
