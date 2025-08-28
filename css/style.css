@@ -1,26 +1,37 @@
+body {
+  font-family: 'Pretendard', sans-serif;
+}
+
 .inner {
   width: 1920px;
 }
 
-.banner-wrap .inner {
+.banner-wrap {
   display: flex;
   background: var(--main-navy);
   height: 51px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
-.inner .banner-text {
+.banner-wrap .inner {
+  width: 1440px;
+  position: relative;
+}
+.banner-wrap .banner-text {
   color: var(--text-white);
   font-size: 16px;
   font-weight: var(--fw-bold);
+  width: 1440px;
+  text-align: center;
 }
 
 .inner .banner-close {
   position: absolute;
-  left: 1600px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .main-menu-wrap {
@@ -29,13 +40,14 @@
   padding: 20px 50px;
 }
 
+.inner .main.menu-wrap img {
+  width: 100%;
+}
+
 .inner .main-menu-right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  font-size: 16px;
-  font-weight: ;
+  padding: 10px 0;
 }
 
 .inner .main-menu-gnb {
@@ -44,6 +56,15 @@
   justify-content: flex-end;
   gap: 10px;
   color: var(--text-black);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.inner .main-menu-gnb .gnb-login::after {
+  content: '|';
+  margin: 0 0 0 10px;
+  color: var(--border2);
+  font-weight: 400;
 }
 
 .inner .main-menu-list {
@@ -52,12 +73,15 @@
   gap: 10px;
   margin: 24px 0;
   color: var(--text-black);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .inner .list-bar::after {
   content: '|';
   margin: 0 0 0 10px;
   color: var(--border2);
+  font-weight: 400;
 }
 
 .inner .header-sub-wrap {
@@ -75,12 +99,20 @@
   align-items: center;
   gap: 10px;
   color: var(--text-black);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.inner .sub-menu-list .gnb-login::after {
+  content: '|';
+  margin: 0 0 0 10px;
+  color: var(--border2);
 }
 
 .footer-top .inner {
   display: flex;
-  justify-content: space-between;
-  padding: 17px 205px;
+  padding: 17px 240px;
+  gap: 500px;
 }
 .footer-top .footer-left {
   display: flex;
@@ -101,8 +133,9 @@
 
 .footer-top .footer-left .address-list::after {
   content: '|';
-  margin: 0 0 0 5px;
+  margin: 0 0 0 10px;
   color: var(--border2);
+  font-weight: 400;
 }
 
 .footer-top .footer-right {
@@ -137,7 +170,7 @@
 .footer-bottom {
   display: flex;
   background: var(--main-navy);
-  padding: 17px 205px;
+  padding: 17px 240px;
   color: var(--border3);
   font-size: 12px;
 }
@@ -156,4 +189,5 @@
   content: '|';
   margin: 0 0 0 25px;
   color: var(--border2);
+  font-weight: 400;
 }
