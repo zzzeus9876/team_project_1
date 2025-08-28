@@ -8,6 +8,11 @@ body {
 
 /* header */
 
+.header-main-wrap {
+  /* 나중에 지울부분 */
+  background: rgba(255, 0, 0, 0.1);
+}
+
 .banner-wrap {
   display: flex;
   background: var(--main-navy);
@@ -21,6 +26,7 @@ body {
   width: 1440px;
   position: relative;
 }
+
 .banner-wrap .banner-text {
   color: var(--text-white);
   font-size: 16px;
@@ -95,6 +101,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
+  /* 나중에 지울부분 */
+  background: rgba(0, 255, 0, 0.1);
 }
 
 .inner .sub-menu-left {
@@ -117,9 +125,11 @@ body {
   color: var(--border2);
 }
 
-/* main */
+/* main_변경예정 */
 .sample {
   height: 1000px;
+  /* 나중에 지울부분 */
+  background: rgba(0, 0, 255, 0.1);
 }
 
 /* footer */
@@ -128,7 +138,10 @@ body {
   display: flex;
   padding: 0 240px;
   gap: 500px;
+  /* 나중에 지울부분 */
+  background: rgba(255, 0, 0, 0.1);
 }
+
 .footer-top .footer-left {
   display: flex;
   flex-direction: column;
